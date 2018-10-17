@@ -1,0 +1,47 @@
+{
+  "name": "frontend-react-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "antd": "^3.10.1",
+    "axios": "^0.18.0",
+    "body-parser": "^1.18.3",
+    "helmet": "^3.14.0",
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
+    "react": "^16.5.2",
+    "react-app-env": "^1.2.2",
+    "react-dom": "^16.5.2",
+    "react-redux": "^5.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.0.5",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0",
+    "request": "^2.88.0",
+    "xss": "^1.0.3"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "build": "react-scripts build",
+    "start:dev": "react-app-env --env-file=development.env start",
+    "build:dev": "react-app-env --env-file=development_build.env build",
+    "build:prod": "react-app-env --env-file=production.env build",
+    "prod": "node server.js",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "_initDevEnviroment_": "npm i helmet antd  axios  react-redux  redux   react-router-dom  redux-logger  request  xss lodash react-app-env | npm i --save-dev cross-env"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "devDependencies": {
+    "cross-env": "^5.2.0"
+  }
+}
